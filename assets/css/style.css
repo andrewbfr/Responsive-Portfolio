@@ -154,7 +154,7 @@ h1 {
 	border-bottom: 4px solid #cccccc;
 }
 
-#headshot {
+img#headshot {
 	width: 200px;
 	height: 150px;
 	/*margin-left: 30px;*/
@@ -236,29 +236,40 @@ div.social {
 @media screen and (max-width: 980px) {
 	
 	.real-container {
-		width: 100%;
+		width: 980px;
 	}
 	.col-12{ 
 		width: 100%;
 		/*margin: auto 0;*/
 	}
 
+	#name {
+		margin-left: 8.33%;
+	}
 
+	.col-3{
+		width: 25%;
+	}
 
-	.col-6 {
-		width: 50%;
+	.col-5 {
+		width: 41.66%;
 		margin-left: 125px; 
 	}
 	
-	.col-5 {
-		width: 50%;
+	.col-4 { 
+		width: 33.33%;
+	}
+
+	#headshot {
+		width: 33.33%;
 	}
 	#bio {
-		line-height: 250%
+		line-height: 250%;
 	}
 
 	.col-3 {
 		width: 25%;
+		margin-right: 125px;
 	}
 
 	#foot {
