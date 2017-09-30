@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>About Me</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<!--  <link rel="stylesheet" type="text/css" href="assets/css/resets.css"> 
+	Having this properly linked is giving me grief so I have it commented out for initial configuration. Specifically, h1 and h2 tags are normal size text. I think it has to do with a specificity so I am trying to make sure to use class and IDs to reference affected elements. Cascading should be taken care of because my real stylesheet is linked next.. slightly confused. -->
+
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+<!--header and about/portfolio/contact-->
+<div class="real-container">
+<div class="navbar col-12">
+			
+			<!-- <h1 id="name">Andrew Ferrer</h1> -->
+			<ul class="head-text">
+				<li><h1 id="name">Andrew Ferrer</h1></li>
+				<span id="nav">
+				<li><a class="nav" ref="index.html" target="_blank">About</a></li>
+				<li><a class="nav" href="portfolio.html" target="_blank">Portfolio</a></li>
+				<li><a class="nav" href="contact.html" target="_blank">Contact</a></li>
+				</span>
+			</ul>
+
+
+	<!--Check this out from w3, use the header as another part of the list 
+	<li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li style="float:left"><a class="active" href="#about">About</a></li> -->
+
+</div>
+<div class="main-container"> 
+<!--main body div container-->
+
+
+<!--about me, headshot, bio-->
+	<div class="ambox col-6">
+	<!--One problem I've had while setting this up is that the "bio" ID and the "ambox" class are being treated separately, that is, I've had to declare the background color for both individually instead of the "ambox" class accounting for what I thought was the entire block-->
+		<h1 id="title">About Me</h1>
+
+		<br> 
+		<div id="about-bottom"></div> <!--Should this be created this way? -->
+		
+		<!-- <img src="assets/images/headshot.jpg" alt="headshot of author" id="headshot"> -->
+			<p id="bio"> 
+			<img src="assets/images/headshot.jpg" alt="headshot of author" class="col-5" id="headshot">
+			Nori grape silver beet broccoli kombu beet greens <span>fava bean potato quandong celery. Bunya nuts </span> black-eyed pea prairie turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut pea sierra leone bologi leek soko chicory celtuce parsley jícama salsify.
+			<br><br>
+			Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori. Grape wattle seed kombu beetroot horseradish carrot squash brussels sprout chard.
+			</p>
+	
+	
+	</div>
+
+<!--connect & icons-->
+
+	<div class="social col-3">
+		<h2>Connect With Me</h2>
+		<div id="connect-bottom"></div>
+
+		<a href="https://github.com/andrewbfr" target="_blank">
+			<img src="assets/images/if_github_386637.png" alt="github icon" id="github">
+		</a>
+		<a href="https://www.linkedin.com/in/andrew-ferrer-9aa011a6/" target="_blank">
+			<img src="assets/images/if_LinkedIN2_326115.png" alt="linkedin icon" id="linkedin">
+		</a>
+		<a href="https://stackoverflow.com/users/8497994/andrewbfr" target="_blank">
+			<img src="assets/images/if_overflow_386674.png" alt="stack overflow icon" id="stacko">
+		</a>
+
+	</div>
+
+</div>
+</div> <!--main body div closing-->
+<!--footer-->
+	<footer class="col-12" id="foot">
+		&copy; Copyright 2017 Andrew Ferrer
+	</footer>
+
+
+</body>
+</html>
